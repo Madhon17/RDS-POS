@@ -1,0 +1,193 @@
+object FroomPass: TFroomPass
+  Left = 520
+  Top = 154
+  AutoScroll = False
+  BorderIcons = []
+  Caption = 'Password Room'
+  ClientHeight = 128
+  ClientWidth = 334
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Visible = True
+  OnClose = FormClose
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 40
+    Top = 36
+    Width = 55
+    Height = 13
+    Caption = 'Password'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object btnsimpan: TbsSkinButton
+    Left = 90
+    Top = 77
+    Width = 75
+    Height = 25
+    TabOrder = 0
+    SkinData = FrmInduk.bsSkinData2
+    SkinDataName = 'button'
+    DefaultFont.Charset = DEFAULT_CHARSET
+    DefaultFont.Color = clWindowText
+    DefaultFont.Height = 14
+    DefaultFont.Name = 'Arial'
+    DefaultFont.Style = [fsBold]
+    DefaultWidth = 0
+    DefaultHeight = 0
+    UseSkinFont = True
+    RepeatMode = False
+    RepeatInterval = 100
+    AllowAllUp = False
+    TabStop = True
+    CanFocused = True
+    Down = False
+    GroupIndex = 0
+    Caption = 'Simpan'
+    NumGlyphs = 1
+    Spacing = 1
+    OnClick = btnsimpanClick
+  end
+  object btnbatal: TbsSkinButton
+    Left = 170
+    Top = 77
+    Width = 75
+    Height = 25
+    TabOrder = 1
+    SkinData = FrmInduk.bsSkinData2
+    SkinDataName = 'button'
+    DefaultFont.Charset = DEFAULT_CHARSET
+    DefaultFont.Color = clWindowText
+    DefaultFont.Height = 14
+    DefaultFont.Name = 'Arial'
+    DefaultFont.Style = [fsBold]
+    DefaultWidth = 0
+    DefaultHeight = 0
+    UseSkinFont = True
+    RepeatMode = False
+    RepeatInterval = 100
+    AllowAllUp = False
+    TabStop = True
+    CanFocused = True
+    Down = False
+    GroupIndex = 0
+    Caption = 'Batal'
+    NumGlyphs = 1
+    Spacing = 1
+    OnClick = btnbatalClick
+  end
+  object edtPass: TEdit
+    Left = 104
+    Top = 32
+    Width = 185
+    Height = 21
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    MaxLength = 20
+    ParentFont = False
+    PasswordChar = '*'
+    TabOrder = 2
+  end
+  object bsBusinessSkinForm1: TbsBusinessSkinForm
+    UseFormCursorInNCArea = False
+    MaxMenuItemsInWindow = 0
+    ClientWidth = 0
+    ClientHeight = 0
+    HideCaptionButtons = False
+    AlwaysShowInTray = False
+    LogoBitMapTransparent = False
+    AlwaysMinimizeToTray = False
+    UseSkinFontInMenu = True
+    ShowIcon = False
+    MaximizeOnFullScreen = False
+    AlphaBlend = False
+    AlphaBlendAnimation = False
+    AlphaBlendValue = 200
+    ShowObjectHint = False
+    UseDefaultObjectHint = True
+    MenusAlphaBlend = False
+    MenusAlphaBlendAnimation = False
+    MenusAlphaBlendValue = 230
+    DefCaptionFont.Charset = DEFAULT_CHARSET
+    DefCaptionFont.Color = clBtnText
+    DefCaptionFont.Height = 14
+    DefCaptionFont.Name = 'Arial'
+    DefCaptionFont.Style = [fsBold]
+    DefInActiveCaptionFont.Charset = DEFAULT_CHARSET
+    DefInActiveCaptionFont.Color = clBtnShadow
+    DefInActiveCaptionFont.Height = 14
+    DefInActiveCaptionFont.Name = 'Arial'
+    DefInActiveCaptionFont.Style = [fsBold]
+    DefMenuItemHeight = 20
+    DefMenuItemFont.Charset = DEFAULT_CHARSET
+    DefMenuItemFont.Color = clWindowText
+    DefMenuItemFont.Height = 14
+    DefMenuItemFont.Name = 'Arial'
+    DefMenuItemFont.Style = []
+    UseDefaultSysMenu = True
+    SkinData = FrmInduk.bsSkinData2
+    MenusSkinData = FrmInduk.bsSkinData1
+    MinHeight = 0
+    MinWidth = 0
+    MaxHeight = 0
+    MaxWidth = 0
+    Magnetic = False
+    MagneticSize = 5
+    BorderIcons = [biMinimize, biMaximize]
+  end
+  object bsSkinMessage1: TbsSkinMessage
+    AlphaBlend = False
+    AlphaBlendAnimation = False
+    AlphaBlendValue = 200
+    SkinData = FrmInduk.bsSkinData2
+    CtrlSkinData = FrmInduk.bsSkinData1
+    ButtonSkinDataName = 'button'
+    MessageLabelSkinDataName = 'stdlabel'
+    DefaultFont.Charset = DEFAULT_CHARSET
+    DefaultFont.Color = clWindowText
+    DefaultFont.Height = 14
+    DefaultFont.Name = 'Arial'
+    DefaultFont.Style = []
+    DefaultButtonFont.Charset = DEFAULT_CHARSET
+    DefaultButtonFont.Color = clWindowText
+    DefaultButtonFont.Height = 14
+    DefaultButtonFont.Name = 'Arial'
+    DefaultButtonFont.Style = []
+    UseSkinFont = True
+    Left = 24
+  end
+  object Tpass: TZQuery
+    Connection = modul.DBmysql
+    SQL.Strings = (
+      'select password from tpass')
+    Params = <>
+    Left = 72
+    object Tpasspassword: TStringField
+      FieldName = 'password'
+    end
+  end
+  object Qupdate: TZQuery
+    Connection = modul.DBmysql
+    SQL.Strings = (
+      'select password from tpass')
+    Params = <>
+    Left = 104
+    object StringField1: TStringField
+      FieldName = 'password'
+    end
+  end
+end
