@@ -1,6 +1,6 @@
 object FcheckServer: TFcheckServer
-  Left = 378
-  Top = 298
+  Left = 404
+  Top = 137
   AutoScroll = False
   BorderIcons = []
   Caption = 'Check Server'

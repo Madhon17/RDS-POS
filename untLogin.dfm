@@ -1,6 +1,6 @@
 object Flogin: TFlogin
-  Left = 196
-  Top = 81
+  Left = 470
+  Top = 121
   BorderIcons = []
   BorderStyle = bsNone
   Caption = 'Login'

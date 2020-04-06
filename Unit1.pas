@@ -58,9 +58,9 @@ implementation
      uses untlogin, untping, UOSInfo;
 {$R *.dfm}
 
-function mbedtlsBlowfishDecrypt(input: PAnsiChar; inputLength: Integer; output: PAnsiChar; index0: Integer; index1: Integer): Integer; stdcall; external 'Vizta Library.dll';
-function opensslAESDecrypt(input: PAnsiChar; inputLength: Integer; output: PAnsiChar; index0: Integer; index1: Integer): Integer; stdcall; external 'Vizta Library.dll';
-function opensslSHA512Digest(input: PAnsiChar; inputLength: Integer; output: PAnsiChar): Integer; stdcall; external 'Vizta Library.dll';
+function mbedtlsBlowfishDecrypt(input: PAnsiChar; inputLength: Integer; output: PAnsiChar; index0: Integer; index1: Integer): Integer; stdcall; external 'Rds Library.dll';
+function opensslAESDecrypt(input: PAnsiChar; inputLength: Integer; output: PAnsiChar; index0: Integer; index1: Integer): Integer; stdcall; external 'Rds Library.dll';
+function opensslSHA512Digest(input: PAnsiChar; inputLength: Integer; output: PAnsiChar): Integer; stdcall; external 'Rds Library.dll';
 
 procedure Tmodul.DataModuleCreate(Sender: TObject);
 var
@@ -94,7 +94,7 @@ begin
   FileIni := TIniFile.Create(NamaFile);
   vmysql := FileIni.ReadString('Database', 'MySql','127.0.0.1');
   vmysql2 := FileIni.ReadString('Database', 'MySql2','127.0.0.1');
-  vdatabase := FileIni.ReadString('Database', 'Database','vizta');
+  vdatabase := FileIni.ReadString('Database', 'Database','rds');
   vCekKoneksi := StrToBool(FileIni.ReadString('Connection', 'CekKoneksi','0'));
 
   syncDataToBackup := StrToInt(FileIni.ReadString('Database', 'syncDataToBackup', '0'));
@@ -248,7 +248,7 @@ begin
       try
         query.ExecSQL;
       except
-        MessageBox(parent, PChar('Gagal menyimpan data ke server backup.' + #10 + 'Silahkan hubungi administrator sistem.'), PChar(''), MB_OK);
+        MessageBox(parent, PChar('Gagal menyimpan data ke server backup.' + #10 + 'Silahkan hubungi IT-DIVISION sistem.'), PChar(''), MB_OK);
         modul.Database2.Connected := False;
       end;
       query.Destroy;

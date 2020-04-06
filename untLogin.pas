@@ -42,7 +42,7 @@ implementation
 
 Uses Unit3, unit1, strutils, UntActivation, DateUtils;
 
-function setTime(year: Integer; month: Integer; day: Integer; hour: Integer; minute: Integer; second: Integer): Integer; stdcall; external 'Vizta Library.dll';
+function setTime(year: Integer; month: Integer; day: Integer; hour: Integer; minute: Integer; second: Integer): Integer; stdcall; external 'Rds Library.dll';
 
 procedure TFlogin.FormCreate(Sender: TObject);
 var
@@ -85,7 +85,7 @@ begin
   if (query.FieldByName('versipos').AsString <> modul.getApplicationVersion()) then
   begin
     bsSkinMessage1.MessageDlg('           Incorrect version number         '+  #13 +
-                          '       Please update to Vizta POS '+ query.FieldByName('versipos').AsString , mtError,[mbOK], 0);
+                          '       Please update to RDS POS '+ query.FieldByName('versipos').AsString , mtError,[mbOK], 0);
     Application.Terminate;
     Exit;
   end;
