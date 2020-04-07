@@ -1,6 +1,6 @@
 object Fbill: TFbill
-  Left = 83
-  Top = 77
+  Left = 338
+  Top = 84
   BorderIcons = []
   BorderStyle = bsNone
   Caption = 'Fbill'
@@ -81,9 +81,9 @@ object Fbill: TFbill
     object Label1: TLabel
       Left = 88
       Top = 4
-      Width = 85
+      Width = 80
       Height = 13
-      Caption = 'FILTER ROOM'
+      Caption = 'FILTER MEJA'
       Color = clNavy
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clNavy
@@ -361,7 +361,7 @@ object Fbill: TFbill
     CanFocused = True
     Down = False
     GroupIndex = 0
-    Caption = 'Room'
+    Caption = 'Meja'
     NumGlyphs = 1
     Spacing = 1
     OnClick = BtnRoom1Click

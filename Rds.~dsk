@@ -1,34 +1,37 @@
 [Closed Files]
-File_0=SourceModule,'E:\developer\11.11.1 work\Untbaranglap.pas',0,1,1,1,1,1,0
-File_1=SourceModule,'E:\developer\11.11.1 work\Unit1.pas',0,1,20,1,69,0,0
-File_2=SourceModule,'E:\developer\11.11.1 work\untcontrolroom.pas',0,1,583,1,1,1,0
-File_3=SourceModule,'E:\developer\11.11.1 work\untCheckServer.pas',0,1,1,1,1,0,0
-File_4=SourceModule,'E:\developer\11.11.1 work\UntActivation.pas',0,1,1,67,20,1,0
-File_5=SourceModule,'E:\developer\11.11.1 work\UntBill.pas',0,1,642,36,1412,1,0
+File_0=SourceModule,'E:\developer\11.11.1 work\untdetailpayment.pas',0,1,687,1,687,1,0
+File_1=SourceModule,'E:\developer\11.11.1 work\untLogin.pas',0,1,409,1,398,1,0
+File_2=SourceModule,'E:\developer\11.11.1 work\Untbaranglap.pas',0,1,1,1,1,1,0
+File_3=SourceModule,'E:\developer\11.11.1 work\untcontrolroom.pas',0,1,583,1,1,1,0
+File_4=SourceModule,'E:\developer\11.11.1 work\untCheckServer.pas',0,1,1,1,1,0,0
+File_5=SourceModule,'E:\developer\11.11.1 work\UntActivation.pas',0,1,1,67,20,1,0
 File_6=SourceModule,'E:\developer\11.11.1 work\UNewStop.pas',0,1,1764,34,657,3,0
-File_7=SourceModule,'E:\developer\11.11.1 work\untdetailpayment.pas',0,1,520,1,384,0,0
 
 [Modules]
-Module0=E:\developer\11.11.1 work\untLogin.pas
+Module0=E:\developer\11.11.1 work\UntBill.pas
 Module1=E:\developer\11.11.1 work\Rds.dpr
 Count=2
 EditWindowCount=1
 
-[E:\developer\11.11.1 work\untLogin.pas]
+[E:\developer\11.11.1 work\UntBill.pas]
 ModuleType=SourceModule
 FormState=1
-FormOnTop=1
+FormOnTop=0
 
 [E:\developer\11.11.1 work\Rds.dpr]
 ModuleType=SourceModule
 FormState=0
 FormOnTop=0
 
-[E:\developer\11.11.1 work\ProjectGroup1.bpg]
+[C:\Program Files (x86)\Borland\Delphi7\Bin\ProjectGroup1.bpg]
 FormState=0
 FormOnTop=0
 
 [E:\developer\11.11.1 work\Unit3.pas]
+FormState=0
+FormOnTop=0
+
+[E:\developer\11.11.1 work\Unit1.pas]
 FormState=0
 FormOnTop=0
 
@@ -41,35 +44,37 @@ CodeExplorer=CodeExplorer@EditWindow0
 MessageView=MessageView@EditWindow0
 Create=1
 Visible=1
-State=0
-Left=280
-Top=140
-Width=977
+State=2
+Left=355
+Top=147
+Width=1085
 Height=568
 MaxLeft=-8
 MaxTop=107
-ClientWidth=961
-ClientHeight=529
+MaxWidth=1456
+MaxHeight=771
+ClientWidth=1440
+ClientHeight=732
 LeftPanelSize=140
 LeftPanelClients=CodeExplorer@EditWindow0
 LeftPanelData=000004000000000000000000000000000000000000000000000100000000000000000C000000436F64654578706C6F726572FFFFFFFF
 RightPanelSize=0
-BottomPanelSize=85
+BottomPanelSize=0
 BottomPanelClients=MessageView@EditWindow0
-BottomPanelData=000004000000000000000000000000000000000000000000000100000000000000000B0000004D65737361676556696577FFFFFFFF
+BottomPanelData=00000400010000000B0000004D657373616765566965770000000000000000000000000000000000FFFFFFFF
 
 [View0]
 Module=E:\developer\11.11.1 work\Rds.dpr
-CursorX=1
-CursorY=1
-TopLine=61
+CursorX=27
+CursorY=15
+TopLine=1
 LeftCol=1
 
 [View1]
-Module=E:\developer\11.11.1 work\untLogin.pas
+Module=E:\developer\11.11.1 work\UntBill.pas
 CursorX=1
-CursorY=398
-TopLine=409
+CursorY=1465
+TopLine=1079
 LeftCol=1
 
 [Watches]
@@ -159,8 +164,8 @@ LRDockWidth=190
 Dockable=1
 SplitPos=159
 ArrangeBy=Name
-SelectedItem=Name
-ExpandedItems=BorderIcons,BusinessSkinForm,BusinessSkinForm.BorderIcons,BusinessSkinForm.DefCaptionFont,BusinessSkinForm.DefInActiveCaptionFont,BusinessSkinForm.DefInActiveCaptionFont.Style,BusinessSkinForm.DefMenuItemFont,BusinessSkinForm.MenusSkinData,BusinessSkinForm.MenusSkinData.CompressedStoredSkin,BusinessSkinForm.SkinData,BusinessSkinForm.SkinData.CompressedStoredSkin,CompressedStoredSkin,CtrlSkinData,CtrlSkinData.CompressedStoredSkin,DataSource,MainMenu,Options,SkinData,SkinData.CompressedStoredSkin,SystemFiler,SystemOptions,SystemPreview,SystemPrinter,SystemSetups,Title,TitleFont.Style
+SelectedItem=Caption
+ExpandedItems=BorderIcons,BusinessSkinForm,BusinessSkinForm.BorderIcons,BusinessSkinForm.DefCaptionFont,BusinessSkinForm.DefInActiveCaptionFont,BusinessSkinForm.DefInActiveCaptionFont.Style,BusinessSkinForm.DefMenuItemFont,BusinessSkinForm.MenusSkinData,BusinessSkinForm.MenusSkinData.CompressedStoredSkin,BusinessSkinForm.SkinData,BusinessSkinForm.SkinData.CompressedStoredSkin,CompressedStoredSkin,CtrlSkinData,CtrlSkinData.CompressedStoredSkin,DataSource,DataSource.DataSet,MainMenu,Options,SkinData,SkinData.CompressedStoredSkin,SystemFiler,SystemOptions,SystemPreview,SystemPrinter,SystemSetups,Title,TitleFont.Style
 HiddenCategories=
 
 [ObjectTree]
@@ -186,26 +191,26 @@ State=0
 Left=0
 Top=12
 Width=140
-Height=429
+Height=720
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=140
-ClientHeight=429
+ClientHeight=720
 TBDockHeight=305
 LRDockWidth=140
 Dockable=1
 
 [MessageView@EditWindow0]
 Create=1
-Visible=1
+Visible=0
 State=0
-Left=12
-Top=0
-Width=949
+Left=-165
+Top=-600
+Width=443
 Height=85
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=949
+ClientWidth=443
 ClientHeight=85
 TBDockHeight=85
 LRDockWidth=443
