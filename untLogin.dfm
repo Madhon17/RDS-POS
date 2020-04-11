@@ -70,8 +70,8 @@ object Flogin: TFlogin
     Visible = False
   end
   object flsForm: TShockwaveFlash
-    Left = 8
-    Top = 28
+    Left = 0
+    Top = -4
     Width = 636
     Height = 477
     TabStop = False

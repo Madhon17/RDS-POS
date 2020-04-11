@@ -1,81 +1,63 @@
 [Closed Files]
-File_0=SourceModule,'E:\developer\11.11.1 work\UntBill.pas',0,1,1079,1,1465,1,0
-File_1=SourceModule,'E:\developer\11.11.1 work\untdetailpayment.pas',0,1,687,1,687,1,0
-File_2=SourceModule,'E:\developer\11.11.1 work\untLogin.pas',0,1,409,1,398,1,0
-File_3=SourceModule,'E:\developer\11.11.1 work\Untbaranglap.pas',0,1,1,1,1,1,0
+File_0=SourceModule,'E:\developer\11.11.1 work\untLogin.pas',0,1,1,34,419,0,0
+File_1=SourceModule,'E:\developer\11.11.1 work\untkoreksi.pas',0,1,539,4,203,1,0
+File_2=SourceModule,'E:\developer\11.11.1 work\UntBill.pas',0,1,1079,1,1465,1,0
+File_3=SourceModule,'E:\developer\11.11.1 work\untdetailpayment.pas',0,1,687,1,687,1,0
 File_4=SourceModule,'E:\developer\11.11.1 work\untcontrolroom.pas',0,1,583,1,1,1,0
 File_5=SourceModule,'E:\developer\11.11.1 work\untCheckServer.pas',0,1,1,1,1,0,0
 File_6=SourceModule,'E:\developer\11.11.1 work\UntActivation.pas',0,1,1,67,20,1,0
 File_7=SourceModule,'E:\developer\11.11.1 work\UNewStop.pas',0,1,1764,34,657,3,0
 
 [Modules]
-Module0=E:\developer\11.11.1 work\untkoreksi.pas
-Module1=E:\developer\11.11.1 work\Rds.dpr
-Count=2
+Module0=E:\developer\11.11.1 work\Untbaranglap.pas
+Count=1
 EditWindowCount=1
 
-[E:\developer\11.11.1 work\untkoreksi.pas]
+[E:\developer\11.11.1 work\Untbaranglap.pas]
 ModuleType=SourceModule
 FormState=1
 FormOnTop=0
 
+[C:\Program Files (x86)\Borland\Delphi7\Bin\ProjectGroup1.bpg]
+FormState=0
+FormOnTop=0
+
 [E:\developer\11.11.1 work\Rds.dpr]
-ModuleType=SourceModule
 FormState=0
 FormOnTop=0
-
-[E:\developer\11.11.1 work\ProjectGroup1.bpg]
-FormState=0
-FormOnTop=0
-
-[E:\developer\11.11.1 work\Unit3.pas]
-FormState=0
-FormOnTop=0
-
-[E:\developer\11.11.1 work\Unit1.pas]
-FormState=0
-FormOnTop=0
+SymbolFile=E:\developer\11.11.1 work\Rds.dsm
+ModSinceCompile=1
 
 [EditWindow0]
-ViewCount=2
-CurrentView=1
+ViewCount=1
+CurrentView=0
 View0=0
-View1=1
 CodeExplorer=CodeExplorer@EditWindow0
 MessageView=MessageView@EditWindow0
 Create=1
 Visible=1
-State=2
+State=0
 Left=355
-Top=147
-Width=1085
+Top=140
+Width=977
 Height=568
-MaxLeft=-8
-MaxTop=107
-MaxWidth=1452
-MaxHeight=771
-ClientWidth=1436
-ClientHeight=732
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=961
+ClientHeight=529
 LeftPanelSize=140
 LeftPanelClients=CodeExplorer@EditWindow0
 LeftPanelData=000004000000000000000000000000000000000000000000000100000000000000000C000000436F64654578706C6F726572FFFFFFFF
 RightPanelSize=0
 BottomPanelSize=0
 BottomPanelClients=MessageView@EditWindow0
-BottomPanelData=00000400010000000B0000004D6573736167655669657700000000000000000000000000000000000100000000000000000B0000004D65737361676556696577FFFFFFFF
+BottomPanelData=00000400010000000B0000004D657373616765566965770000000000000000000000000000000000FFFFFFFF
 
 [View0]
-Module=E:\developer\11.11.1 work\Rds.dpr
-CursorX=56
-CursorY=130
-TopLine=114
-LeftCol=1
-
-[View1]
-Module=E:\developer\11.11.1 work\untkoreksi.pas
-CursorX=4
-CursorY=203
-TopLine=539
+Module=E:\developer\11.11.1 work\Untbaranglap.pas
+CursorX=1
+CursorY=55
+TopLine=25
 LeftCol=1
 
 [Watches]
@@ -192,11 +174,11 @@ State=0
 Left=0
 Top=12
 Width=140
-Height=720
+Height=517
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=140
-ClientHeight=720
+ClientHeight=517
 TBDockHeight=305
 LRDockWidth=140
 Dockable=1
@@ -205,13 +187,13 @@ Dockable=1
 Create=1
 Visible=0
 State=0
-Left=12
-Top=0
-Width=1424
+Left=-165
+Top=-593
+Width=443
 Height=85
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=1424
+ClientWidth=443
 ClientHeight=85
 TBDockHeight=85
 LRDockWidth=443
